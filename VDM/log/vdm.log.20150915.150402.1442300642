@@ -1,0 +1,1036 @@
+2015/09/15-15:04:02.105 [MESSAGE] <VDM>:: 
+	VDM (1.0.00.1)
+2015/09/15-15:04:23.180 [DEBUG] <VDM>:: Recv Message [
+{"width":"600","height":"360","addr":"udp://@225.0.0.1:12345","loop":"yes","autoplay":"autoplay","type":"vlc","x":"337","y":"134","vncindex":"8","cmd":"adddecoder"}XXEE
+]
+2015/09/15-15:04:23.180 [DEBUG] <VDM>:: do Add Decoder
+2015/09/15-15:04:23.180 [WARN] <VDM>:: VideoArea's Position not align to 2..
+2015/09/15-15:04:23.180 [WARN] <VDM>:: VideoArea's Position @ (x:336,y:134)
+2015/09/15-15:04:23.180 [DEBUG] <VDM>:: Get_decode_by_index(8)
+2015/09/15-15:04:23.180 [MESSAGE] <VDM>:: New VideoResource<idx:8,x:336,y:134>..
+2015/09/15-15:04:23.180 [DEBUG] <VDM>:: Obtain_decode(udp://@225.0.0.1:12345,600,360)
+2015/09/15-15:04:23.180 [DEBUG] <VDR>:: New DecodeResource:[600x360|udp://@225.0.0.1:12345#0]
+2015/09/15-15:04:23.180 [MESSAGE] <VDR>:: Video ShmKey:[0x5c8724a0]
+2015/09/15-15:04:23.181 [MESSAGE] <VDR>:: Audio Key:[0x87d196c3]
+2015/09/15-15:04:23.181 [MESSAGE] <VDR>:: VideoKey :1552360608(shmid:1414398163)
+
+2015/09/15-15:04:23.181 [MESSAGE] <VDR>:: AudioKey :-2016307517(shmid:1414430932)
+
+2015/09/15-15:04:23.181 [DEBUG] <VDM>:: Allocate New DecodeResource..
+2015/09/15-15:04:23.181 [MESSAGE] <VR>:: VideoStub Key   :[0xfefe1010]
+2015/09/15-15:04:23.181 [MESSAGE] <VR>:: VideoStub shmid :[9175200]
+2015/09/15-15:04:23.181 [MESSAGE] <VR>:: VideoStub addr  :[0x7f0201893000]
+2015/09/15-15:04:23.181 [MESSAGE] <VR>:: +VideoStub :8@[0x7f02018930e0] .nref:1
+2015/09/15-15:04:23.181 [DEBUG] <VDR>:: New Video Resource:[8|336:134]
+2015/09/15-15:04:23.216 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:1){ :: After Add Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:05:58.085 [DEBUG] <VDM>:: Recv Message [
+{"width":"600","height":"360","addr":"udp://@225.0.0.1:12345","loop":"yes","autoplay":"autoplay","type":"vlc","x":"337","y":"134","vncindex":"9","cmd":"adddecoder"}XXEE
+]
+2015/09/15-15:05:58.085 [DEBUG] <VDM>:: do Add Decoder
+2015/09/15-15:05:58.085 [WARN] <VDM>:: VideoArea's Position not align to 2..
+2015/09/15-15:05:58.085 [WARN] <VDM>:: VideoArea's Position @ (x:336,y:134)
+2015/09/15-15:05:58.085 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:05:58.085 [MESSAGE] <VDM>:: New VideoResource<idx:9,x:336,y:134>..
+2015/09/15-15:05:58.085 [DEBUG] <VDM>:: Obtain_decode(udp://@225.0.0.1:12345,600,360)
+2015/09/15-15:05:58.086 [DEBUG] <VDR>:: New DecodeResource:[600x360|udp://@225.0.0.1:12345#1]
+2015/09/15-15:05:58.086 [MESSAGE] <VDR>:: Video ShmKey:[0x5c88ca80]
+2015/09/15-15:05:58.086 [MESSAGE] <VDR>:: Audio Key:[0x87d1974c]
+2015/09/15-15:05:58.086 [MESSAGE] <VDR>:: VideoKey :1552468608(shmid:1415938221)
+
+2015/09/15-15:05:58.086 [MESSAGE] <VDR>:: AudioKey :-2016307380(shmid:1415970991)
+
+2015/09/15-15:05:58.086 [DEBUG] <VDM>:: Allocate New DecodeResource..
+2015/09/15-15:05:58.086 [MESSAGE] <VR>:: +VideoStub :9@[0x7f02018930fc] .nref:2
+2015/09/15-15:05:58.086 [DEBUG] <VDR>:: New Video Resource:[9|336:134]
+2015/09/15-15:05:58.121 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:2){ :: After Add Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#1|600x360> {
+		0: VideoResource:<resid:1001|idx:9|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:06:43.551 [DEBUG] <VDM>:: Recv Message [
+{"vncindex":"9","cmd":"deldecoder"}XXEE
+]
+2015/09/15-15:06:43.551 [DEBUG] <VDM>:: do Delete Decoder
+2015/09/15-15:06:43.551 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:06:43.551 [DEBUG] <VDM>:: 1 DecodeResource has index 9
+2015/09/15-15:06:43.551 [DEBUG] <VDM>:: To Release DecodeResource
+2015/09/15-15:06:43.551 [DEBUG] <VDM>:: Release_decode()
+2015/09/15-15:06:43.551 [DEBUG] <VDR>:: Destroy DecodeResource:[600x360|udp://@225.0.0.1:12345#1]
+2015/09/15-15:06:43.551 [DEBUG] <VDR>:: To Kill Decode Process[17562]..
+2015/09/15-15:06:43.551 [DEBUG] <VDR>:: To Delete VideoResources,total:0
+2015/09/15-15:06:43.552 [DEBUG] <VDR>:: Delete Video Resource:[9|336:134]
+2015/09/15-15:06:43.552 [MESSAGE] <VR>:: -VideoStub :9@[0x7f02018930fc] .nref:1
+2015/09/15-15:06:43.552 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:1){ :: After Del Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:06:43.596 [DEBUG] <VDM>:: Dispose SIGCHLD Event
+2015/09/15-15:06:44.088 [DEBUG] <VDM>:: Recv Message [
+{"width":"600","height":"360","addr":"udp://@225.0.0.1:12345","loop":"yes","autoplay":"autoplay","type":"vlc","x":"337","y":"134","vncindex":"9","cmd":"adddecoder"}XXEE
+]
+2015/09/15-15:06:44.088 [DEBUG] <VDM>:: do Add Decoder
+2015/09/15-15:06:44.088 [WARN] <VDM>:: VideoArea's Position not align to 2..
+2015/09/15-15:06:44.088 [WARN] <VDM>:: VideoArea's Position @ (x:336,y:134)
+2015/09/15-15:06:44.088 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:06:44.088 [MESSAGE] <VDM>:: New VideoResource<idx:9,x:336,y:134>..
+2015/09/15-15:06:44.088 [DEBUG] <VDM>:: Obtain_decode(udp://@225.0.0.1:12345,600,360)
+2015/09/15-15:06:44.088 [DEBUG] <VDR>:: New DecodeResource:[600x360|udp://@225.0.0.1:12345#2]
+2015/09/15-15:06:44.088 [MESSAGE] <VDR>:: Video ShmKey:[0x5c8a7060]
+2015/09/15-15:06:44.088 [MESSAGE] <VDR>:: Audio Key:[0x87d197d5]
+2015/09/15-15:06:44.089 [MESSAGE] <VDR>:: VideoKey :1552576608(shmid:10125489)
+
+2015/09/15-15:06:44.089 [MESSAGE] <VDR>:: AudioKey :-2016307243(shmid:10158258)
+
+2015/09/15-15:06:44.089 [DEBUG] <VDM>:: Allocate New DecodeResource..
+2015/09/15-15:06:44.089 [MESSAGE] <VR>:: +VideoStub :9@[0x7f02018930fc] .nref:2
+2015/09/15-15:06:44.089 [DEBUG] <VDR>:: New Video Resource:[9|336:134]
+2015/09/15-15:06:44.122 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:2){ :: After Add Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#2|600x360> {
+		0: VideoResource:<resid:1002|idx:9|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:14:20.311 [DEBUG] <VDM>:: Recv Message [
+{"vncindex":"9","cmd":"deldecoder"}XXEE
+]
+2015/09/15-15:14:20.311 [DEBUG] <VDM>:: do Delete Decoder
+2015/09/15-15:14:20.311 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:14:20.311 [DEBUG] <VDM>:: 1 DecodeResource has index 9
+2015/09/15-15:14:20.312 [DEBUG] <VDM>:: To Release DecodeResource
+2015/09/15-15:14:20.312 [DEBUG] <VDM>:: Release_decode()
+2015/09/15-15:14:20.312 [DEBUG] <VDR>:: Destroy DecodeResource:[600x360|udp://@225.0.0.1:12345#2]
+2015/09/15-15:14:20.312 [DEBUG] <VDR>:: To Kill Decode Process[18363]..
+2015/09/15-15:14:20.312 [DEBUG] <VDR>:: To Delete VideoResources,total:0
+2015/09/15-15:14:20.312 [DEBUG] <VDR>:: Delete Video Resource:[9|336:134]
+2015/09/15-15:14:20.312 [MESSAGE] <VR>:: -VideoStub :9@[0x7f02018930fc] .nref:1
+2015/09/15-15:14:20.312 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:1){ :: After Del Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:14:20.367 [DEBUG] <VDM>:: Dispose SIGCHLD Event
+2015/09/15-15:14:20.871 [DEBUG] <VDM>:: Recv Message [
+{"width":"600","height":"360","addr":"udp://@225.0.0.1:12345","loop":"yes","autoplay":"autoplay","type":"vlc","x":"337","y":"134","vncindex":"9","cmd":"adddecoder"}XXEE
+]
+2015/09/15-15:14:20.871 [DEBUG] <VDM>:: do Add Decoder
+2015/09/15-15:14:20.871 [WARN] <VDM>:: VideoArea's Position not align to 2..
+2015/09/15-15:14:20.871 [WARN] <VDM>:: VideoArea's Position @ (x:336,y:134)
+2015/09/15-15:14:20.871 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:14:20.871 [MESSAGE] <VDM>:: New VideoResource<idx:9,x:336,y:134>..
+2015/09/15-15:14:20.871 [DEBUG] <VDM>:: Obtain_decode(udp://@225.0.0.1:12345,600,360)
+2015/09/15-15:14:20.871 [DEBUG] <VDR>:: New DecodeResource:[600x360|udp://@225.0.0.1:12345#3]
+2015/09/15-15:14:20.871 [MESSAGE] <VDR>:: Video ShmKey:[0x5c8c1640]
+2015/09/15-15:14:20.871 [MESSAGE] <VDR>:: Audio Key:[0x87d1985e]
+2015/09/15-15:14:20.871 [MESSAGE] <VDR>:: VideoKey :1552684608(shmid:10420406)
+
+2015/09/15-15:14:20.871 [MESSAGE] <VDR>:: AudioKey :-2016307106(shmid:10453175)
+
+2015/09/15-15:14:20.871 [DEBUG] <VDM>:: Allocate New DecodeResource..
+2015/09/15-15:14:20.871 [MESSAGE] <VR>:: +VideoStub :9@[0x7f02018930fc] .nref:2
+2015/09/15-15:14:20.871 [DEBUG] <VDR>:: New Video Resource:[9|336:134]
+2015/09/15-15:14:20.904 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:2){ :: After Add Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#3|600x360> {
+		0: VideoResource:<resid:1003|idx:9|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:15:35.969 [DEBUG] <VDM>:: Recv Message [
+{"vncindex":"9","cmd":"deldecoder"}XXEE
+]
+2015/09/15-15:15:35.969 [DEBUG] <VDM>:: do Delete Decoder
+2015/09/15-15:15:35.969 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:15:35.969 [DEBUG] <VDM>:: 1 DecodeResource has index 9
+2015/09/15-15:15:35.969 [DEBUG] <VDM>:: To Release DecodeResource
+2015/09/15-15:15:35.969 [DEBUG] <VDM>:: Release_decode()
+2015/09/15-15:15:35.969 [DEBUG] <VDR>:: Destroy DecodeResource:[600x360|udp://@225.0.0.1:12345#3]
+2015/09/15-15:15:35.970 [DEBUG] <VDR>:: To Kill Decode Process[26586]..
+2015/09/15-15:15:35.970 [DEBUG] <VDR>:: To Delete VideoResources,total:0
+2015/09/15-15:15:35.970 [DEBUG] <VDR>:: Delete Video Resource:[9|336:134]
+2015/09/15-15:15:35.970 [MESSAGE] <VR>:: -VideoStub :9@[0x7f02018930fc] .nref:1
+2015/09/15-15:15:35.970 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:1){ :: After Del Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:15:36.018 [DEBUG] <VDM>:: Dispose SIGCHLD Event
+2015/09/15-15:15:36.449 [DEBUG] <VDM>:: Recv Message [
+{"width":"600","height":"360","addr":"udp://@225.0.0.1:12345","loop":"yes","autoplay":"autoplay","type":"vlc","x":"337","y":"134","vncindex":"9","cmd":"adddecoder"}XXEE
+]
+2015/09/15-15:15:36.449 [DEBUG] <VDM>:: do Add Decoder
+2015/09/15-15:15:36.449 [WARN] <VDM>:: VideoArea's Position not align to 2..
+2015/09/15-15:15:36.449 [WARN] <VDM>:: VideoArea's Position @ (x:336,y:134)
+2015/09/15-15:15:36.449 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:15:36.449 [MESSAGE] <VDM>:: New VideoResource<idx:9,x:336,y:134>..
+2015/09/15-15:15:36.449 [DEBUG] <VDM>:: Obtain_decode(udp://@225.0.0.1:12345,600,360)
+2015/09/15-15:15:36.449 [DEBUG] <VDR>:: New DecodeResource:[600x360|udp://@225.0.0.1:12345#4]
+2015/09/15-15:15:36.449 [MESSAGE] <VDR>:: Video ShmKey:[0x5c8dbc20]
+2015/09/15-15:15:36.449 [MESSAGE] <VDR>:: Audio Key:[0x87d198e7]
+2015/09/15-15:15:36.449 [MESSAGE] <VDR>:: VideoKey :1552792608(shmid:12058832)
+
+2015/09/15-15:15:36.449 [MESSAGE] <VDR>:: AudioKey :-2016306969(shmid:12091601)
+
+2015/09/15-15:15:36.449 [DEBUG] <VDM>:: Allocate New DecodeResource..
+2015/09/15-15:15:36.449 [MESSAGE] <VR>:: +VideoStub :9@[0x7f02018930fc] .nref:2
+2015/09/15-15:15:36.449 [DEBUG] <VDR>:: New Video Resource:[9|336:134]
+2015/09/15-15:15:36.483 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:2){ :: After Add Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#4|600x360> {
+		0: VideoResource:<resid:1004|idx:9|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:18:57.391 [DEBUG] <VDM>:: Recv Message [
+{"vncindex":"9","cmd":"deldecoder"}XXEE
+]
+2015/09/15-15:18:57.391 [DEBUG] <VDM>:: do Delete Decoder
+2015/09/15-15:18:57.391 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:18:57.391 [DEBUG] <VDM>:: 1 DecodeResource has index 9
+2015/09/15-15:18:57.391 [DEBUG] <VDM>:: To Release DecodeResource
+2015/09/15-15:18:57.391 [DEBUG] <VDM>:: Release_decode()
+2015/09/15-15:18:57.391 [DEBUG] <VDR>:: Destroy DecodeResource:[600x360|udp://@225.0.0.1:12345#4]
+2015/09/15-15:18:57.391 [DEBUG] <VDR>:: To Kill Decode Process[27694]..
+2015/09/15-15:18:57.392 [DEBUG] <VDR>:: To Delete VideoResources,total:0
+2015/09/15-15:18:57.392 [DEBUG] <VDR>:: Delete Video Resource:[9|336:134]
+2015/09/15-15:18:57.392 [MESSAGE] <VR>:: -VideoStub :9@[0x7f02018930fc] .nref:1
+2015/09/15-15:18:57.392 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:1){ :: After Del Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:18:57.436 [DEBUG] <VDM>:: Dispose SIGCHLD Event
+2015/09/15-15:18:57.856 [DEBUG] <VDM>:: Recv Message [
+{"width":"600","height":"360","addr":"udp://@225.0.0.1:12345","loop":"yes","autoplay":"autoplay","type":"vlc","x":"337","y":"134","vncindex":"9","cmd":"adddecoder"}XXEE
+]
+2015/09/15-15:18:57.856 [DEBUG] <VDM>:: do Add Decoder
+2015/09/15-15:18:57.856 [WARN] <VDM>:: VideoArea's Position not align to 2..
+2015/09/15-15:18:57.856 [WARN] <VDM>:: VideoArea's Position @ (x:336,y:134)
+2015/09/15-15:18:57.856 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:18:57.856 [MESSAGE] <VDM>:: New VideoResource<idx:9,x:336,y:134>..
+2015/09/15-15:18:57.856 [DEBUG] <VDM>:: Obtain_decode(udp://@225.0.0.1:12345,600,360)
+2015/09/15-15:18:57.856 [DEBUG] <VDR>:: New DecodeResource:[600x360|udp://@225.0.0.1:12345#5]
+2015/09/15-15:18:57.856 [MESSAGE] <VDR>:: Video ShmKey:[0x5c8f6200]
+2015/09/15-15:18:57.856 [MESSAGE] <VDR>:: Audio Key:[0x87d19970]
+2015/09/15-15:18:57.856 [MESSAGE] <VDR>:: VideoKey :1552900608(shmid:12386518)
+
+2015/09/15-15:18:57.856 [MESSAGE] <VDR>:: AudioKey :-2016306832(shmid:12419287)
+
+2015/09/15-15:18:57.856 [DEBUG] <VDM>:: Allocate New DecodeResource..
+2015/09/15-15:18:57.856 [MESSAGE] <VR>:: +VideoStub :9@[0x7f02018930fc] .nref:2
+2015/09/15-15:18:57.856 [DEBUG] <VDR>:: New Video Resource:[9|336:134]
+2015/09/15-15:18:57.889 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:2){ :: After Add Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#5|600x360> {
+		0: VideoResource:<resid:1005|idx:9|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:21:43.996 [DEBUG] <VDM>:: Recv Message [
+{"vncindex":"9","cmd":"deldecoder"}XXEE
+]
+2015/09/15-15:21:43.997 [DEBUG] <VDM>:: do Delete Decoder
+2015/09/15-15:21:43.997 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:21:43.997 [DEBUG] <VDM>:: 1 DecodeResource has index 9
+2015/09/15-15:21:43.997 [DEBUG] <VDM>:: To Release DecodeResource
+2015/09/15-15:21:43.997 [DEBUG] <VDM>:: Release_decode()
+2015/09/15-15:21:43.997 [DEBUG] <VDR>:: Destroy DecodeResource:[600x360|udp://@225.0.0.1:12345#5]
+2015/09/15-15:21:43.997 [DEBUG] <VDR>:: To Kill Decode Process[29889]..
+2015/09/15-15:21:43.997 [DEBUG] <VDR>:: To Delete VideoResources,total:0
+2015/09/15-15:21:43.997 [DEBUG] <VDR>:: Delete Video Resource:[9|336:134]
+2015/09/15-15:21:43.997 [MESSAGE] <VR>:: -VideoStub :9@[0x7f02018930fc] .nref:1
+2015/09/15-15:21:43.997 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:1){ :: After Del Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:21:44.045 [DEBUG] <VDM>:: Dispose SIGCHLD Event
+2015/09/15-15:21:44.483 [DEBUG] <VDM>:: Recv Message [
+{"width":"600","height":"360","addr":"udp://@225.0.0.1:12345","loop":"yes","autoplay":"autoplay","type":"vlc","x":"337","y":"134","vncindex":"9","cmd":"adddecoder"}XXEE
+]
+2015/09/15-15:21:44.483 [DEBUG] <VDM>:: do Add Decoder
+2015/09/15-15:21:44.483 [WARN] <VDM>:: VideoArea's Position not align to 2..
+2015/09/15-15:21:44.483 [WARN] <VDM>:: VideoArea's Position @ (x:336,y:134)
+2015/09/15-15:21:44.484 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:21:44.484 [MESSAGE] <VDM>:: New VideoResource<idx:9,x:336,y:134>..
+2015/09/15-15:21:44.484 [DEBUG] <VDM>:: Obtain_decode(udp://@225.0.0.1:12345,600,360)
+2015/09/15-15:21:44.484 [DEBUG] <VDR>:: New DecodeResource:[600x360|udp://@225.0.0.1:12345#6]
+2015/09/15-15:21:44.484 [MESSAGE] <VDR>:: Video ShmKey:[0x5c9107e0]
+2015/09/15-15:21:44.484 [MESSAGE] <VDR>:: Audio Key:[0x87d199f9]
+2015/09/15-15:21:44.484 [MESSAGE] <VDR>:: VideoKey :1553008608(shmid:12878023)
+
+2015/09/15-15:21:44.484 [MESSAGE] <VDR>:: AudioKey :-2016306695(shmid:12910793)
+
+2015/09/15-15:21:44.484 [DEBUG] <VDM>:: Allocate New DecodeResource..
+2015/09/15-15:21:44.484 [MESSAGE] <VR>:: +VideoStub :9@[0x7f02018930fc] .nref:2
+2015/09/15-15:21:44.484 [DEBUG] <VDR>:: New Video Resource:[9|336:134]
+2015/09/15-15:21:44.519 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:2){ :: After Add Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#6|600x360> {
+		0: VideoResource:<resid:1006|idx:9|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:25:20.606 [DEBUG] <VDM>:: Recv Message [
+{"vncindex":"9","cmd":"deldecoder"}XXEE
+]
+2015/09/15-15:25:20.606 [DEBUG] <VDM>:: do Delete Decoder
+2015/09/15-15:25:20.606 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:25:20.606 [DEBUG] <VDM>:: 1 DecodeResource has index 9
+2015/09/15-15:25:20.606 [DEBUG] <VDM>:: To Release DecodeResource
+2015/09/15-15:25:20.606 [DEBUG] <VDM>:: Release_decode()
+2015/09/15-15:25:20.607 [DEBUG] <VDR>:: Destroy DecodeResource:[600x360|udp://@225.0.0.1:12345#6]
+2015/09/15-15:25:20.607 [DEBUG] <VDR>:: To Kill Decode Process[31040]..
+2015/09/15-15:25:20.607 [DEBUG] <VDR>:: To Delete VideoResources,total:0
+2015/09/15-15:25:20.607 [DEBUG] <VDR>:: Delete Video Resource:[9|336:134]
+2015/09/15-15:25:20.607 [MESSAGE] <VR>:: -VideoStub :9@[0x7f02018930fc] .nref:1
+2015/09/15-15:25:20.607 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:1){ :: After Del Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:25:20.652 [DEBUG] <VDM>:: Dispose SIGCHLD Event
+2015/09/15-15:25:20.990 [DEBUG] <VDM>:: Recv Message [
+{"width":"600","height":"360","addr":"udp://@225.0.0.1:12345","loop":"yes","autoplay":"autoplay","type":"vlc","x":"337","y":"134","vncindex":"9","cmd":"adddecoder"}XXEE
+]
+2015/09/15-15:25:20.990 [DEBUG] <VDM>:: do Add Decoder
+2015/09/15-15:25:20.990 [WARN] <VDM>:: VideoArea's Position not align to 2..
+2015/09/15-15:25:20.990 [WARN] <VDM>:: VideoArea's Position @ (x:336,y:134)
+2015/09/15-15:25:20.990 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:25:20.990 [MESSAGE] <VDM>:: New VideoResource<idx:9,x:336,y:134>..
+2015/09/15-15:25:20.990 [DEBUG] <VDM>:: Obtain_decode(udp://@225.0.0.1:12345,600,360)
+2015/09/15-15:25:20.990 [DEBUG] <VDR>:: New DecodeResource:[600x360|udp://@225.0.0.1:12345#7]
+2015/09/15-15:25:20.990 [MESSAGE] <VDR>:: Video ShmKey:[0x5c92adc0]
+2015/09/15-15:25:20.990 [MESSAGE] <VDR>:: Audio Key:[0x87d19a82]
+2015/09/15-15:25:20.990 [MESSAGE] <VDR>:: VideoKey :1553116608(shmid:13205721)
+
+2015/09/15-15:25:20.990 [MESSAGE] <VDR>:: AudioKey :-2016306558(shmid:13238490)
+
+2015/09/15-15:25:20.990 [DEBUG] <VDM>:: Allocate New DecodeResource..
+2015/09/15-15:25:20.990 [MESSAGE] <VR>:: +VideoStub :9@[0x7f02018930fc] .nref:2
+2015/09/15-15:25:20.990 [DEBUG] <VDR>:: New Video Resource:[9|336:134]
+2015/09/15-15:25:21.023 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:2){ :: After Add Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#7|600x360> {
+		0: VideoResource:<resid:1007|idx:9|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:28:52.838 [DEBUG] <VDM>:: Recv Message [
+{"vncindex":"9","cmd":"deldecoder"}XXEE
+]
+2015/09/15-15:28:52.838 [DEBUG] <VDM>:: do Delete Decoder
+2015/09/15-15:28:52.838 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:28:52.838 [DEBUG] <VDM>:: 1 DecodeResource has index 9
+2015/09/15-15:28:52.838 [DEBUG] <VDM>:: To Release DecodeResource
+2015/09/15-15:28:52.838 [DEBUG] <VDM>:: Release_decode()
+2015/09/15-15:28:52.838 [DEBUG] <VDR>:: Destroy DecodeResource:[600x360|udp://@225.0.0.1:12345#7]
+2015/09/15-15:28:52.838 [DEBUG] <VDR>:: To Kill Decode Process[32573]..
+2015/09/15-15:28:52.838 [DEBUG] <VDR>:: To Delete VideoResources,total:0
+2015/09/15-15:28:52.839 [DEBUG] <VDR>:: Delete Video Resource:[9|336:134]
+2015/09/15-15:28:52.839 [MESSAGE] <VR>:: -VideoStub :9@[0x7f02018930fc] .nref:1
+2015/09/15-15:28:52.839 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:1){ :: After Del Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:28:52.883 [DEBUG] <VDM>:: Dispose SIGCHLD Event
+2015/09/15-15:28:53.304 [DEBUG] <VDM>:: Recv Message [
+{"width":"600","height":"360","addr":"udp://@225.0.0.1:12345","loop":"yes","autoplay":"autoplay","type":"vlc","x":"337","y":"134","vncindex":"9","cmd":"adddecoder"}XXEE
+]
+2015/09/15-15:28:53.304 [DEBUG] <VDM>:: do Add Decoder
+2015/09/15-15:28:53.304 [WARN] <VDM>:: VideoArea's Position not align to 2..
+2015/09/15-15:28:53.304 [WARN] <VDM>:: VideoArea's Position @ (x:336,y:134)
+2015/09/15-15:28:53.304 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:28:53.304 [MESSAGE] <VDM>:: New VideoResource<idx:9,x:336,y:134>..
+2015/09/15-15:28:53.304 [DEBUG] <VDM>:: Obtain_decode(udp://@225.0.0.1:12345,600,360)
+2015/09/15-15:28:53.304 [DEBUG] <VDR>:: New DecodeResource:[600x360|udp://@225.0.0.1:12345#8]
+2015/09/15-15:28:53.304 [MESSAGE] <VDR>:: Video ShmKey:[0x5c9453a0]
+2015/09/15-15:28:53.304 [MESSAGE] <VDR>:: Audio Key:[0x87d19b0b]
+2015/09/15-15:28:53.304 [MESSAGE] <VDR>:: VideoKey :1553224608(shmid:13533407)
+
+2015/09/15-15:28:53.304 [MESSAGE] <VDR>:: AudioKey :-2016306421(shmid:13566176)
+
+2015/09/15-15:28:53.304 [DEBUG] <VDM>:: Allocate New DecodeResource..
+2015/09/15-15:28:53.304 [MESSAGE] <VR>:: +VideoStub :9@[0x7f02018930fc] .nref:2
+2015/09/15-15:28:53.304 [DEBUG] <VDR>:: New Video Resource:[9|336:134]
+2015/09/15-15:28:53.338 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:2){ :: After Add Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#8|600x360> {
+		0: VideoResource:<resid:1008|idx:9|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:29:04.302 [DEBUG] <VDM>:: Recv Message [
+{"vncindex":"9","cmd":"deldecoder"}XXEE
+]
+2015/09/15-15:29:04.302 [DEBUG] <VDM>:: do Delete Decoder
+2015/09/15-15:29:04.302 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:29:04.302 [DEBUG] <VDM>:: 1 DecodeResource has index 9
+2015/09/15-15:29:04.303 [DEBUG] <VDM>:: To Release DecodeResource
+2015/09/15-15:29:04.303 [DEBUG] <VDM>:: Release_decode()
+2015/09/15-15:29:04.303 [DEBUG] <VDR>:: Destroy DecodeResource:[600x360|udp://@225.0.0.1:12345#8]
+2015/09/15-15:29:04.303 [DEBUG] <VDR>:: To Kill Decode Process[1610]..
+2015/09/15-15:29:04.303 [DEBUG] <VDR>:: To Delete VideoResources,total:0
+2015/09/15-15:29:04.303 [DEBUG] <VDR>:: Delete Video Resource:[9|336:134]
+2015/09/15-15:29:04.303 [MESSAGE] <VR>:: -VideoStub :9@[0x7f02018930fc] .nref:1
+2015/09/15-15:29:04.303 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:1){ :: After Del Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:29:04.355 [DEBUG] <VDM>:: Dispose SIGCHLD Event
+2015/09/15-15:29:04.607 [DEBUG] <VDM>:: Recv Message [
+{"width":"600","height":"360","addr":"udp://@225.0.0.1:12345","loop":"yes","autoplay":"autoplay","type":"vlc","x":"337","y":"134","vncindex":"9","cmd":"adddecoder"}XXEE
+]
+2015/09/15-15:29:04.607 [DEBUG] <VDM>:: do Add Decoder
+2015/09/15-15:29:04.607 [WARN] <VDM>:: VideoArea's Position not align to 2..
+2015/09/15-15:29:04.607 [WARN] <VDM>:: VideoArea's Position @ (x:336,y:134)
+2015/09/15-15:29:04.607 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:29:04.607 [MESSAGE] <VDM>:: New VideoResource<idx:9,x:336,y:134>..
+2015/09/15-15:29:04.607 [DEBUG] <VDM>:: Obtain_decode(udp://@225.0.0.1:12345,600,360)
+2015/09/15-15:29:04.607 [DEBUG] <VDR>:: New DecodeResource:[600x360|udp://@225.0.0.1:12345#9]
+2015/09/15-15:29:04.607 [MESSAGE] <VDR>:: Video ShmKey:[0x5c95f980]
+2015/09/15-15:29:04.607 [MESSAGE] <VDR>:: Audio Key:[0x87d19b94]
+2015/09/15-15:29:04.607 [MESSAGE] <VDR>:: VideoKey :1553332608(shmid:15171833)
+
+2015/09/15-15:29:04.607 [MESSAGE] <VDR>:: AudioKey :-2016306284(shmid:15204602)
+
+2015/09/15-15:29:04.607 [DEBUG] <VDM>:: Allocate New DecodeResource..
+2015/09/15-15:29:04.607 [MESSAGE] <VR>:: +VideoStub :9@[0x7f02018930fc] .nref:2
+2015/09/15-15:29:04.607 [DEBUG] <VDR>:: New Video Resource:[9|336:134]
+2015/09/15-15:29:04.663 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:2){ :: After Add Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#9|600x360> {
+		0: VideoResource:<resid:1009|idx:9|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:33:39.534 [DEBUG] <VDM>:: Recv Message [
+{"vncindex":"9","cmd":"deldecoder"}XXEE
+]
+2015/09/15-15:33:39.534 [DEBUG] <VDM>:: do Delete Decoder
+2015/09/15-15:33:39.534 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:33:39.534 [DEBUG] <VDM>:: 1 DecodeResource has index 9
+2015/09/15-15:33:39.534 [DEBUG] <VDM>:: To Release DecodeResource
+2015/09/15-15:33:39.534 [DEBUG] <VDM>:: Release_decode()
+2015/09/15-15:33:39.534 [DEBUG] <VDR>:: Destroy DecodeResource:[600x360|udp://@225.0.0.1:12345#9]
+2015/09/15-15:33:39.534 [DEBUG] <VDR>:: To Kill Decode Process[1693]..
+2015/09/15-15:33:39.535 [DEBUG] <VDR>:: To Delete VideoResources,total:0
+2015/09/15-15:33:39.535 [DEBUG] <VDR>:: Delete Video Resource:[9|336:134]
+2015/09/15-15:33:39.535 [MESSAGE] <VR>:: -VideoStub :9@[0x7f02018930fc] .nref:1
+2015/09/15-15:33:39.535 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:1){ :: After Del Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:33:39.580 [DEBUG] <VDM>:: Dispose SIGCHLD Event
+2015/09/15-15:33:40.029 [DEBUG] <VDM>:: Recv Message [
+{"width":"600","height":"360","addr":"udp://@225.0.0.1:12345","loop":"yes","autoplay":"autoplay","type":"vlc","x":"337","y":"134","vncindex":"9","cmd":"adddecoder"}XXEE
+]
+2015/09/15-15:33:40.029 [DEBUG] <VDM>:: do Add Decoder
+2015/09/15-15:33:40.029 [WARN] <VDM>:: VideoArea's Position not align to 2..
+2015/09/15-15:33:40.029 [WARN] <VDM>:: VideoArea's Position @ (x:336,y:134)
+2015/09/15-15:33:40.029 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:33:40.029 [MESSAGE] <VDM>:: New VideoResource<idx:9,x:336,y:134>..
+2015/09/15-15:33:40.029 [DEBUG] <VDM>:: Obtain_decode(udp://@225.0.0.1:12345,600,360)
+2015/09/15-15:33:40.029 [DEBUG] <VDR>:: New DecodeResource:[600x360|udp://@225.0.0.1:12345#10]
+2015/09/15-15:33:40.029 [MESSAGE] <VDR>:: Video ShmKey:[0x6c52f780]
+2015/09/15-15:33:40.029 [MESSAGE] <VDR>:: Audio Key:[0xf547f724]
+2015/09/15-15:33:40.029 [MESSAGE] <VDR>:: VideoKey :1817376640(shmid:15499519)
+
+2015/09/15-15:33:40.029 [MESSAGE] <VDR>:: AudioKey :-179833052(shmid:15532288)
+
+2015/09/15-15:33:40.029 [DEBUG] <VDM>:: Allocate New DecodeResource..
+2015/09/15-15:33:40.029 [MESSAGE] <VR>:: +VideoStub :9@[0x7f02018930fc] .nref:2
+2015/09/15-15:33:40.029 [DEBUG] <VDR>:: New Video Resource:[9|336:134]
+2015/09/15-15:33:40.063 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:2){ :: After Add Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#10|600x360> {
+		0: VideoResource:<resid:1010|idx:9|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:34:51.015 [DEBUG] <VDM>:: Recv Message [
+{"vncindex":"9","cmd":"deldecoder"}XXEE
+]
+2015/09/15-15:34:51.015 [DEBUG] <VDM>:: do Delete Decoder
+2015/09/15-15:34:51.015 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:34:51.015 [DEBUG] <VDM>:: 1 DecodeResource has index 9
+2015/09/15-15:34:51.015 [DEBUG] <VDM>:: To Release DecodeResource
+2015/09/15-15:34:51.015 [DEBUG] <VDM>:: Release_decode()
+2015/09/15-15:34:51.015 [DEBUG] <VDR>:: Destroy DecodeResource:[600x360|udp://@225.0.0.1:12345#10]
+2015/09/15-15:34:51.016 [DEBUG] <VDR>:: To Kill Decode Process[3581]..
+2015/09/15-15:34:51.016 [DEBUG] <VDR>:: To Delete VideoResources,total:0
+2015/09/15-15:34:51.016 [DEBUG] <VDR>:: Delete Video Resource:[9|336:134]
+2015/09/15-15:34:51.016 [MESSAGE] <VR>:: -VideoStub :9@[0x7f02018930fc] .nref:1
+2015/09/15-15:34:51.016 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:1){ :: After Del Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:34:51.061 [DEBUG] <VDM>:: Dispose SIGCHLD Event
+2015/09/15-15:34:51.493 [DEBUG] <VDM>:: Recv Message [
+{"width":"600","height":"360","addr":"udp://@225.0.0.1:12345","loop":"yes","autoplay":"autoplay","type":"vlc","x":"337","y":"134","vncindex":"9","cmd":"adddecoder"}XXEE
+]
+2015/09/15-15:34:51.493 [DEBUG] <VDM>:: do Add Decoder
+2015/09/15-15:34:51.493 [WARN] <VDM>:: VideoArea's Position not align to 2..
+2015/09/15-15:34:51.493 [WARN] <VDM>:: VideoArea's Position @ (x:336,y:134)
+2015/09/15-15:34:51.493 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:34:51.493 [MESSAGE] <VDM>:: New VideoResource<idx:9,x:336,y:134>..
+2015/09/15-15:34:51.493 [DEBUG] <VDM>:: Obtain_decode(udp://@225.0.0.1:12345,600,360)
+2015/09/15-15:34:51.493 [DEBUG] <VDR>:: New DecodeResource:[600x360|udp://@225.0.0.1:12345#11]
+2015/09/15-15:34:51.493 [MESSAGE] <VDR>:: Video ShmKey:[0x6c549d60]
+2015/09/15-15:34:51.493 [MESSAGE] <VDR>:: Audio Key:[0xf547f7ad]
+2015/09/15-15:34:51.493 [MESSAGE] <VDR>:: VideoKey :1817484640(shmid:15827183)
+
+2015/09/15-15:34:51.493 [MESSAGE] <VDR>:: AudioKey :-179832915(shmid:15859953)
+
+2015/09/15-15:34:51.493 [DEBUG] <VDM>:: Allocate New DecodeResource..
+2015/09/15-15:34:51.493 [MESSAGE] <VR>:: +VideoStub :9@[0x7f02018930fc] .nref:2
+2015/09/15-15:34:51.493 [DEBUG] <VDR>:: New Video Resource:[9|336:134]
+2015/09/15-15:34:51.523 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:2){ :: After Add Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#11|600x360> {
+		0: VideoResource:<resid:1011|idx:9|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:36:00.561 [DEBUG] <VDM>:: Recv Message [
+{"vncindex":"9","cmd":"deldecoder"}XXEE
+]
+2015/09/15-15:36:00.562 [DEBUG] <VDM>:: do Delete Decoder
+2015/09/15-15:36:00.562 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:36:00.562 [DEBUG] <VDM>:: 1 DecodeResource has index 9
+2015/09/15-15:36:00.562 [DEBUG] <VDM>:: To Release DecodeResource
+2015/09/15-15:36:00.562 [DEBUG] <VDM>:: Release_decode()
+2015/09/15-15:36:00.562 [DEBUG] <VDR>:: Destroy DecodeResource:[600x360|udp://@225.0.0.1:12345#11]
+2015/09/15-15:36:00.562 [DEBUG] <VDR>:: To Kill Decode Process[4029]..
+2015/09/15-15:36:00.562 [DEBUG] <VDR>:: To Delete VideoResources,total:0
+2015/09/15-15:36:00.562 [DEBUG] <VDR>:: Delete Video Resource:[9|336:134]
+2015/09/15-15:36:00.562 [MESSAGE] <VR>:: -VideoStub :9@[0x7f02018930fc] .nref:1
+2015/09/15-15:36:00.562 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:1){ :: After Del Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:36:00.605 [DEBUG] <VDM>:: Dispose SIGCHLD Event
+2015/09/15-15:36:01.025 [DEBUG] <VDM>:: Recv Message [
+{"width":"600","height":"360","addr":"udp://@225.0.0.1:12345","loop":"yes","autoplay":"autoplay","type":"vlc","x":"337","y":"134","vncindex":"9","cmd":"adddecoder"}XXEE
+]
+2015/09/15-15:36:01.025 [DEBUG] <VDM>:: do Add Decoder
+2015/09/15-15:36:01.025 [WARN] <VDM>:: VideoArea's Position not align to 2..
+2015/09/15-15:36:01.025 [WARN] <VDM>:: VideoArea's Position @ (x:336,y:134)
+2015/09/15-15:36:01.025 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:36:01.025 [MESSAGE] <VDM>:: New VideoResource<idx:9,x:336,y:134>..
+2015/09/15-15:36:01.025 [DEBUG] <VDM>:: Obtain_decode(udp://@225.0.0.1:12345,600,360)
+2015/09/15-15:36:01.025 [DEBUG] <VDR>:: New DecodeResource:[600x360|udp://@225.0.0.1:12345#12]
+2015/09/15-15:36:01.025 [MESSAGE] <VDR>:: Video ShmKey:[0x6c564340]
+2015/09/15-15:36:01.025 [MESSAGE] <VDR>:: Audio Key:[0xf547f836]
+2015/09/15-15:36:01.025 [MESSAGE] <VDR>:: VideoKey :1817592640(shmid:16154881)
+
+2015/09/15-15:36:01.025 [MESSAGE] <VDR>:: AudioKey :-179832778(shmid:16187650)
+
+2015/09/15-15:36:01.025 [DEBUG] <VDM>:: Allocate New DecodeResource..
+2015/09/15-15:36:01.025 [MESSAGE] <VR>:: +VideoStub :9@[0x7f02018930fc] .nref:2
+2015/09/15-15:36:01.025 [DEBUG] <VDR>:: New Video Resource:[9|336:134]
+2015/09/15-15:36:01.058 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:2){ :: After Add Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#12|600x360> {
+		0: VideoResource:<resid:1012|idx:9|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:36:29.584 [DEBUG] <VDM>:: Recv Message [
+{"vncindex":"9","cmd":"deldecoder"}XXEE
+]
+2015/09/15-15:36:29.584 [DEBUG] <VDM>:: do Delete Decoder
+2015/09/15-15:36:29.584 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:36:29.584 [DEBUG] <VDM>:: 1 DecodeResource has index 9
+2015/09/15-15:36:29.584 [DEBUG] <VDM>:: To Release DecodeResource
+2015/09/15-15:36:29.584 [DEBUG] <VDM>:: Release_decode()
+2015/09/15-15:36:29.584 [DEBUG] <VDR>:: Destroy DecodeResource:[600x360|udp://@225.0.0.1:12345#12]
+2015/09/15-15:36:29.584 [DEBUG] <VDR>:: To Kill Decode Process[4530]..
+2015/09/15-15:36:29.584 [DEBUG] <VDR>:: To Delete VideoResources,total:0
+2015/09/15-15:36:29.585 [DEBUG] <VDR>:: Delete Video Resource:[9|336:134]
+2015/09/15-15:36:29.585 [MESSAGE] <VR>:: -VideoStub :9@[0x7f02018930fc] .nref:1
+2015/09/15-15:36:29.585 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:1){ :: After Del Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:36:29.633 [DEBUG] <VDM>:: Dispose SIGCHLD Event
+2015/09/15-15:36:30.052 [DEBUG] <VDM>:: Recv Message [
+{"width":"600","height":"360","addr":"udp://@225.0.0.1:12345","loop":"yes","autoplay":"autoplay","type":"vlc","x":"337","y":"134","vncindex":"9","cmd":"adddecoder"}XXEE
+]
+2015/09/15-15:36:30.052 [DEBUG] <VDM>:: do Add Decoder
+2015/09/15-15:36:30.052 [WARN] <VDM>:: VideoArea's Position not align to 2..
+2015/09/15-15:36:30.052 [WARN] <VDM>:: VideoArea's Position @ (x:336,y:134)
+2015/09/15-15:36:30.052 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:36:30.053 [MESSAGE] <VDM>:: New VideoResource<idx:9,x:336,y:134>..
+2015/09/15-15:36:30.053 [DEBUG] <VDM>:: Obtain_decode(udp://@225.0.0.1:12345,600,360)
+2015/09/15-15:36:30.053 [DEBUG] <VDR>:: New DecodeResource:[600x360|udp://@225.0.0.1:12345#13]
+2015/09/15-15:36:30.053 [MESSAGE] <VDR>:: Video ShmKey:[0x6c57e920]
+2015/09/15-15:36:30.053 [MESSAGE] <VDR>:: Audio Key:[0xf547f8bf]
+2015/09/15-15:36:30.053 [MESSAGE] <VDR>:: VideoKey :1817700640(shmid:16482567)
+
+2015/09/15-15:36:30.053 [MESSAGE] <VDR>:: AudioKey :-179832641(shmid:16515336)
+
+2015/09/15-15:36:30.053 [DEBUG] <VDM>:: Allocate New DecodeResource..
+2015/09/15-15:36:30.053 [MESSAGE] <VR>:: +VideoStub :9@[0x7f02018930fc] .nref:2
+2015/09/15-15:36:30.053 [DEBUG] <VDR>:: New Video Resource:[9|336:134]
+2015/09/15-15:36:30.086 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:2){ :: After Add Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#13|600x360> {
+		0: VideoResource:<resid:1013|idx:9|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:39:28.504 [DEBUG] <VDM>:: Recv Message [
+{"vncindex":"9","cmd":"deldecoder"}XXEE
+]
+2015/09/15-15:39:28.504 [DEBUG] <VDM>:: do Delete Decoder
+2015/09/15-15:39:28.504 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:39:28.504 [DEBUG] <VDM>:: 1 DecodeResource has index 9
+2015/09/15-15:39:28.504 [DEBUG] <VDM>:: To Release DecodeResource
+2015/09/15-15:39:28.504 [DEBUG] <VDM>:: Release_decode()
+2015/09/15-15:39:28.504 [DEBUG] <VDR>:: Destroy DecodeResource:[600x360|udp://@225.0.0.1:12345#13]
+2015/09/15-15:39:28.504 [DEBUG] <VDR>:: To Kill Decode Process[4698]..
+2015/09/15-15:39:28.504 [DEBUG] <VDR>:: To Delete VideoResources,total:0
+2015/09/15-15:39:28.505 [DEBUG] <VDR>:: Delete Video Resource:[9|336:134]
+2015/09/15-15:39:28.505 [MESSAGE] <VR>:: -VideoStub :9@[0x7f02018930fc] .nref:1
+2015/09/15-15:39:28.505 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:1){ :: After Del Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:39:28.551 [DEBUG] <VDM>:: Dispose SIGCHLD Event
+2015/09/15-15:39:28.862 [DEBUG] <VDM>:: Recv Message [
+{"width":"600","height":"360","addr":"udp://@225.0.0.1:12345","loop":"yes","autoplay":"autoplay","type":"vlc","x":"337","y":"134","vncindex":"9","cmd":"adddecoder"}XXEE
+]
+2015/09/15-15:39:28.862 [DEBUG] <VDM>:: do Add Decoder
+2015/09/15-15:39:28.862 [WARN] <VDM>:: VideoArea's Position not align to 2..
+2015/09/15-15:39:28.862 [WARN] <VDM>:: VideoArea's Position @ (x:336,y:134)
+2015/09/15-15:39:28.862 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:39:28.862 [MESSAGE] <VDM>:: New VideoResource<idx:9,x:336,y:134>..
+2015/09/15-15:39:28.862 [DEBUG] <VDM>:: Obtain_decode(udp://@225.0.0.1:12345,600,360)
+2015/09/15-15:39:28.862 [DEBUG] <VDR>:: New DecodeResource:[600x360|udp://@225.0.0.1:12345#14]
+2015/09/15-15:39:28.862 [MESSAGE] <VDR>:: Video ShmKey:[0x6c598f00]
+2015/09/15-15:39:28.863 [MESSAGE] <VDR>:: Audio Key:[0xf547f948]
+2015/09/15-15:39:28.863 [MESSAGE] <VDR>:: VideoKey :1817808640(shmid:18088224)
+
+2015/09/15-15:39:28.863 [MESSAGE] <VDR>:: AudioKey :-179832504(shmid:18120993)
+
+2015/09/15-15:39:28.863 [DEBUG] <VDM>:: Allocate New DecodeResource..
+2015/09/15-15:39:28.863 [MESSAGE] <VR>:: +VideoStub :9@[0x7f02018930fc] .nref:2
+2015/09/15-15:39:28.863 [DEBUG] <VDR>:: New Video Resource:[9|336:134]
+2015/09/15-15:39:28.897 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:2){ :: After Add Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#14|600x360> {
+		0: VideoResource:<resid:1014|idx:9|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:40:15.926 [DEBUG] <VDM>:: Recv Message [
+{"vncindex":"9","cmd":"deldecoder"}XXEE
+]
+2015/09/15-15:40:15.926 [DEBUG] <VDM>:: do Delete Decoder
+2015/09/15-15:40:15.926 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:40:15.926 [DEBUG] <VDM>:: 1 DecodeResource has index 9
+2015/09/15-15:40:15.926 [DEBUG] <VDM>:: To Release DecodeResource
+2015/09/15-15:40:15.926 [DEBUG] <VDM>:: Release_decode()
+2015/09/15-15:40:15.926 [DEBUG] <VDR>:: Destroy DecodeResource:[600x360|udp://@225.0.0.1:12345#14]
+2015/09/15-15:40:15.926 [DEBUG] <VDR>:: To Kill Decode Process[5869]..
+2015/09/15-15:40:15.926 [DEBUG] <VDR>:: To Delete VideoResources,total:0
+2015/09/15-15:40:15.927 [DEBUG] <VDR>:: Delete Video Resource:[9|336:134]
+2015/09/15-15:40:15.927 [MESSAGE] <VR>:: -VideoStub :9@[0x7f02018930fc] .nref:1
+2015/09/15-15:40:15.927 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:1){ :: After Del Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:40:15.970 [DEBUG] <VDM>:: Dispose SIGCHLD Event
+2015/09/15-15:40:16.366 [DEBUG] <VDM>:: Recv Message [
+{"width":"600","height":"360","addr":"udp://@225.0.0.1:12345","loop":"yes","autoplay":"autoplay","type":"vlc","x":"337","y":"134","vncindex":"9","cmd":"adddecoder"}XXEE
+]
+2015/09/15-15:40:16.366 [DEBUG] <VDM>:: do Add Decoder
+2015/09/15-15:40:16.366 [WARN] <VDM>:: VideoArea's Position not align to 2..
+2015/09/15-15:40:16.366 [WARN] <VDM>:: VideoArea's Position @ (x:336,y:134)
+2015/09/15-15:40:16.366 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:40:16.366 [MESSAGE] <VDM>:: New VideoResource<idx:9,x:336,y:134>..
+2015/09/15-15:40:16.366 [DEBUG] <VDM>:: Obtain_decode(udp://@225.0.0.1:12345,600,360)
+2015/09/15-15:40:16.366 [DEBUG] <VDR>:: New DecodeResource:[600x360|udp://@225.0.0.1:12345#15]
+2015/09/15-15:40:16.366 [MESSAGE] <VDR>:: Video ShmKey:[0x6c5b34e0]
+2015/09/15-15:40:16.366 [MESSAGE] <VDR>:: Audio Key:[0xf547f9d1]
+2015/09/15-15:40:16.366 [MESSAGE] <VDR>:: VideoKey :1817916640(shmid:19235095)
+
+2015/09/15-15:40:16.366 [MESSAGE] <VDR>:: AudioKey :-179832367(shmid:19267865)
+
+2015/09/15-15:40:16.366 [DEBUG] <VDM>:: Allocate New DecodeResource..
+2015/09/15-15:40:16.366 [MESSAGE] <VR>:: +VideoStub :9@[0x7f02018930fc] .nref:2
+2015/09/15-15:40:16.366 [DEBUG] <VDR>:: New Video Resource:[9|336:134]
+2015/09/15-15:40:16.398 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:2){ :: After Add Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#15|600x360> {
+		0: VideoResource:<resid:1015|idx:9|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:56:27.087 [DEBUG] <VDM>:: Recv Message [
+{"vncindex":"9","cmd":"deldecoder"}XXEE
+]
+2015/09/15-15:56:27.087 [DEBUG] <VDM>:: do Delete Decoder
+2015/09/15-15:56:27.087 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:56:27.087 [DEBUG] <VDM>:: 1 DecodeResource has index 9
+2015/09/15-15:56:27.087 [DEBUG] <VDM>:: To Release DecodeResource
+2015/09/15-15:56:27.087 [DEBUG] <VDM>:: Release_decode()
+2015/09/15-15:56:27.087 [DEBUG] <VDR>:: Destroy DecodeResource:[600x360|udp://@225.0.0.1:12345#15]
+2015/09/15-15:56:27.087 [DEBUG] <VDR>:: To Kill Decode Process[6231]..
+2015/09/15-15:56:27.087 [DEBUG] <VDR>:: To Delete VideoResources,total:0
+2015/09/15-15:56:27.088 [DEBUG] <VDR>:: Delete Video Resource:[9|336:134]
+2015/09/15-15:56:27.088 [MESSAGE] <VR>:: -VideoStub :9@[0x7f02018930fc] .nref:1
+2015/09/15-15:56:27.088 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:1){ :: After Del Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:56:27.131 [DEBUG] <VDM>:: Dispose SIGCHLD Event
+2015/09/15-15:56:27.544 [DEBUG] <VDM>:: Recv Message [
+{"width":"600","height":"360","addr":"udp://@225.0.0.1:12345","loop":"yes","autoplay":"autoplay","type":"vlc","x":"337","y":"134","vncindex":"9","cmd":"adddecoder"}XXEE
+]
+2015/09/15-15:56:27.544 [DEBUG] <VDM>:: do Add Decoder
+2015/09/15-15:56:27.544 [WARN] <VDM>:: VideoArea's Position not align to 2..
+2015/09/15-15:56:27.544 [WARN] <VDM>:: VideoArea's Position @ (x:336,y:134)
+2015/09/15-15:56:27.544 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:56:27.545 [MESSAGE] <VDM>:: New VideoResource<idx:9,x:336,y:134>..
+2015/09/15-15:56:27.545 [DEBUG] <VDM>:: Obtain_decode(udp://@225.0.0.1:12345,600,360)
+2015/09/15-15:56:27.545 [DEBUG] <VDR>:: New DecodeResource:[600x360|udp://@225.0.0.1:12345#16]
+2015/09/15-15:56:27.545 [MESSAGE] <VDR>:: Video ShmKey:[0x6c5cdac0]
+2015/09/15-15:56:27.545 [MESSAGE] <VDR>:: Audio Key:[0xf547fa5a]
+2015/09/15-15:56:27.545 [MESSAGE] <VDR>:: VideoKey :1818024640(shmid:19988766)
+
+2015/09/15-15:56:27.545 [MESSAGE] <VDR>:: AudioKey :-179832230(shmid:20021539)
+
+2015/09/15-15:56:27.545 [DEBUG] <VDM>:: Allocate New DecodeResource..
+2015/09/15-15:56:27.545 [MESSAGE] <VR>:: +VideoStub :9@[0x7f02018930fc] .nref:2
+2015/09/15-15:56:27.545 [DEBUG] <VDR>:: New Video Resource:[9|336:134]
+2015/09/15-15:56:27.576 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:2){ :: After Add Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#16|600x360> {
+		0: VideoResource:<resid:1016|idx:9|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:56:34.096 [DEBUG] <VDM>:: Recv Message [
+{"vncindex":"9","cmd":"deldecoder"}XXEE
+]
+2015/09/15-15:56:34.096 [DEBUG] <VDM>:: do Delete Decoder
+2015/09/15-15:56:34.096 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:56:34.096 [DEBUG] <VDM>:: 1 DecodeResource has index 9
+2015/09/15-15:56:34.096 [DEBUG] <VDM>:: To Release DecodeResource
+2015/09/15-15:56:34.096 [DEBUG] <VDM>:: Release_decode()
+2015/09/15-15:56:34.096 [DEBUG] <VDR>:: Destroy DecodeResource:[600x360|udp://@225.0.0.1:12345#16]
+2015/09/15-15:56:34.096 [DEBUG] <VDR>:: To Kill Decode Process[13867]..
+2015/09/15-15:56:34.096 [DEBUG] <VDR>:: To Delete VideoResources,total:0
+2015/09/15-15:56:34.097 [DEBUG] <VDR>:: Delete Video Resource:[9|336:134]
+2015/09/15-15:56:34.097 [MESSAGE] <VR>:: -VideoStub :9@[0x7f02018930fc] .nref:1
+2015/09/15-15:56:34.097 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:1){ :: After Del Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:56:34.140 [DEBUG] <VDM>:: Dispose SIGCHLD Event
+2015/09/15-15:56:36.382 [DEBUG] <VDM>:: Recv Message [
+{"width":"600","height":"360","addr":"udp://@225.0.0.1:12345","loop":"yes","autoplay":"autoplay","type":"vlc","x":"337","y":"134","vncindex":"9","cmd":"adddecoder"}XXEE
+]
+2015/09/15-15:56:36.382 [DEBUG] <VDM>:: do Add Decoder
+2015/09/15-15:56:36.382 [WARN] <VDM>:: VideoArea's Position not align to 2..
+2015/09/15-15:56:36.382 [WARN] <VDM>:: VideoArea's Position @ (x:336,y:134)
+2015/09/15-15:56:36.382 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:56:36.382 [MESSAGE] <VDM>:: New VideoResource<idx:9,x:336,y:134>..
+2015/09/15-15:56:36.382 [DEBUG] <VDM>:: Obtain_decode(udp://@225.0.0.1:12345,600,360)
+2015/09/15-15:56:36.382 [DEBUG] <VDR>:: New DecodeResource:[600x360|udp://@225.0.0.1:12345#17]
+2015/09/15-15:56:36.382 [MESSAGE] <VDR>:: Video ShmKey:[0x6c5e80a0]
+2015/09/15-15:56:36.382 [MESSAGE] <VDR>:: Audio Key:[0xf547fae3]
+2015/09/15-15:56:36.382 [MESSAGE] <VDR>:: VideoKey :1818132640(shmid:20316456)
+
+2015/09/15-15:56:36.382 [MESSAGE] <VDR>:: AudioKey :-179832093(shmid:20349225)
+
+2015/09/15-15:56:36.382 [DEBUG] <VDM>:: Allocate New DecodeResource..
+2015/09/15-15:56:36.382 [MESSAGE] <VR>:: +VideoStub :9@[0x7f02018930fc] .nref:2
+2015/09/15-15:56:36.382 [DEBUG] <VDR>:: New Video Resource:[9|336:134]
+2015/09/15-15:56:36.414 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:2){ :: After Add Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#17|600x360> {
+		0: VideoResource:<resid:1017|idx:9|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:56:51.399 [DEBUG] <VDM>:: Recv Message [
+{"vncindex":"9","cmd":"deldecoder"}XXEE
+]
+2015/09/15-15:56:51.400 [DEBUG] <VDM>:: do Delete Decoder
+2015/09/15-15:56:51.400 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:56:51.400 [DEBUG] <VDM>:: 1 DecodeResource has index 9
+2015/09/15-15:56:51.400 [DEBUG] <VDM>:: To Release DecodeResource
+2015/09/15-15:56:51.400 [DEBUG] <VDM>:: Release_decode()
+2015/09/15-15:56:51.400 [DEBUG] <VDR>:: Destroy DecodeResource:[600x360|udp://@225.0.0.1:12345#17]
+2015/09/15-15:56:51.400 [DEBUG] <VDR>:: To Kill Decode Process[14067]..
+2015/09/15-15:56:51.400 [DEBUG] <VDR>:: To Delete VideoResources,total:0
+2015/09/15-15:56:51.400 [DEBUG] <VDR>:: Delete Video Resource:[9|336:134]
+2015/09/15-15:56:51.400 [MESSAGE] <VR>:: -VideoStub :9@[0x7f02018930fc] .nref:1
+2015/09/15-15:56:51.400 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:1){ :: After Del Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:56:51.448 [DEBUG] <VDM>:: Dispose SIGCHLD Event
+2015/09/15-15:56:53.574 [DEBUG] <VDM>:: Recv Message [
+{"width":"600","height":"360","addr":"udp://@225.0.0.1:12345","loop":"yes","autoplay":"autoplay","type":"vlc","x":"337","y":"134","vncindex":"9","cmd":"adddecoder"}XXEE
+]
+2015/09/15-15:56:53.574 [DEBUG] <VDM>:: do Add Decoder
+2015/09/15-15:56:53.574 [WARN] <VDM>:: VideoArea's Position not align to 2..
+2015/09/15-15:56:53.574 [WARN] <VDM>:: VideoArea's Position @ (x:336,y:134)
+2015/09/15-15:56:53.574 [DEBUG] <VDM>:: Get_decode_by_index(9)
+2015/09/15-15:56:53.574 [MESSAGE] <VDM>:: New VideoResource<idx:9,x:336,y:134>..
+2015/09/15-15:56:53.574 [DEBUG] <VDM>:: Obtain_decode(udp://@225.0.0.1:12345,600,360)
+2015/09/15-15:56:53.574 [DEBUG] <VDR>:: New DecodeResource:[600x360|udp://@225.0.0.1:12345#18]
+2015/09/15-15:56:53.574 [MESSAGE] <VDR>:: Video ShmKey:[0x6c602680]
+2015/09/15-15:56:53.574 [MESSAGE] <VDR>:: Audio Key:[0xf547fb6c]
+2015/09/15-15:56:53.574 [MESSAGE] <VDR>:: VideoKey :1818240640(shmid:20775214)
+
+2015/09/15-15:56:53.574 [MESSAGE] <VDR>:: AudioKey :-179831956(shmid:20807983)
+
+2015/09/15-15:56:53.574 [DEBUG] <VDM>:: Allocate New DecodeResource..
+2015/09/15-15:56:53.574 [MESSAGE] <VR>:: +VideoStub :9@[0x7f02018930fc] .nref:2
+2015/09/15-15:56:53.574 [DEBUG] <VDR>:: New Video Resource:[9|336:134]
+2015/09/15-15:56:53.611 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:2){ :: After Add Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#18|600x360> {
+		0: VideoResource:<resid:1018|idx:9|x:336.y:134>
+	}
+
+}
+[0m
+
+2015/09/15-15:57:36.156 [DEBUG] <VDM>:: Recv Message [
+{"width":"600","height":"360","addr":"udp://@225.0.0.1:12345","loop":"yes","autoplay":"autoplay","type":"vlc","x":"337","y":"134","vncindex":"10","cmd":"adddecoder"}XXEE
+]
+2015/09/15-15:57:36.156 [DEBUG] <VDM>:: do Add Decoder
+2015/09/15-15:57:36.156 [WARN] <VDM>:: VideoArea's Position not align to 2..
+2015/09/15-15:57:36.156 [WARN] <VDM>:: VideoArea's Position @ (x:336,y:134)
+2015/09/15-15:57:36.156 [DEBUG] <VDM>:: Get_decode_by_index(10)
+2015/09/15-15:57:36.156 [MESSAGE] <VDM>:: New VideoResource<idx:10,x:336,y:134>..
+2015/09/15-15:57:36.156 [DEBUG] <VDM>:: Obtain_decode(udp://@225.0.0.1:12345,600,360)
+2015/09/15-15:57:36.156 [DEBUG] <VDR>:: New DecodeResource:[600x360|udp://@225.0.0.1:12345#19]
+2015/09/15-15:57:36.156 [MESSAGE] <VDR>:: Video ShmKey:[0x6c61cc60]
+2015/09/15-15:57:36.156 [MESSAGE] <VDR>:: Audio Key:[0xf547fbf5]
+2015/09/15-15:57:36.156 [MESSAGE] <VDR>:: VideoKey :1818348640(shmid:22413640)
+
+2015/09/15-15:57:36.156 [MESSAGE] <VDR>:: AudioKey :-179831819(shmid:22446409)
+
+2015/09/15-15:57:36.156 [DEBUG] <VDM>:: Allocate New DecodeResource..
+2015/09/15-15:57:36.156 [MESSAGE] <VR>:: +VideoStub :10@[0x7f0201893118] .nref:3
+2015/09/15-15:57:36.156 [DEBUG] <VDR>:: New Video Resource:[10|336:134]
+2015/09/15-15:57:36.188 [DEBUG] <VDM>:: 
+[33mDecode Manager (size:3){ :: After Add Decoder
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#0|600x360> {
+		0: VideoResource:<resid:1000|idx:8|x:336.y:134>
+	}
+
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#18|600x360> {
+		0: VideoResource:<resid:1018|idx:9|x:336.y:134>
+	}
+
+ 1:	DecodeResource:<url:udp://@225.0.0.1:12345#19|600x360> {
+		0: VideoResource:<resid:1019|idx:10|x:336.y:134>
+	}
+
+}
+[0m
+

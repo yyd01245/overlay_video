@@ -1,0 +1,21 @@
+新增一路解码接口：
+请求报文:
+{"cmd":"adddecoder", "vncindex":"10","addr":"udp://192.168.100.1:20000", "x":"100", "y":"100", "width":"600", "height":"360"}XXEE
+返回报文:
+{"cmd":"adddecoder","retcode":"0","resid":"10111"}XXEE
+
+
+删除一路解码接口：
+请求报文:
+{"cmd":"deldecoder", "vncindex":"10"}XXEE
+返回报文:
+{"cmd":"deldecoder","retcode":"0"}XXEE
+
+
+删除一路解码接口：
+请求报文:
+{"cmd":"deldecoder", "vncindex":"10","resid":"10111"}XXEE
+返回报文:
+{"cmd":"deldecoder","retcode":"0","addtime":"20150808"}XXEE
+
+
